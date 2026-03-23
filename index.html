@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raphaël Fablet</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="first" id="brandFirst">RAPHAËL</span> <span class="last" id="brandLast">FABLET</span></div>
+    <button id="contactBtn" class="contact-btn">Contact</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="video-wrap">
+        <button id="soundBtn" class="sound-btn">Sound off</button>
+        <video id="video1" class="hero-video is-active" playsinline preload="auto" muted poster=""></video>
+        <video id="video2" class="hero-video" playsinline preload="auto" muted poster=""></video>
+        <div class="overlay"></div>
+        <div class="shutter top" id="shutterTop"></div>
+        <div class="shutter bottom" id="shutterBottom"></div>
+      </div>
+
+      <section class="mobile-copy">
+        <h1 class="headline">
+          <span class="line">LET'S</span>
+          <span class="line">CREATE</span>
+          <span class="line">IMPACT</span>
+        </h1>
+        <p class="subline"><span>Editing</span><span class="dot">•</span><span>Motion</span><span class="dot">•</span><span>Music</span></p>
+      </section>
+
+      <section class="desktop-copy">
+        <h1 class="headline desktop-headline">
+          <span class="line">LET'S</span>
+          <span class="line">CREATE</span>
+          <span class="line">IMPACT</span>
+        </h1>
+        <p class="subline desktop-subline"><span>Editing</span><span class="dot">•</span><span>Motion</span><span class="dot">•</span><span>Music</span></p>
+      </section>
+    </section>
+  </main>
+
+  <div class="contact-modal" id="contactModal" aria-hidden="true">
+    <div class="contact-panel">
+      <div class="contact-head">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let's make it happen</h2>
+        </div>
+        <button id="closeContact" class="close-btn">✕</button>
+      </div>
+      <p>Bring the idea, the timing, the ambition — I’ll take it from there.</p>
+      <div class="contact-info">
+        <p>raphael.fablet@gmail.com</p>
+        <p>LinkedIn / Instagram / Vimeo</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
