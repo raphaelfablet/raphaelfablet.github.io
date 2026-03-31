@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raphaël Fablet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#" class="brand">
+        <span class="brand-first">RAPHAËL</span>
+        <span class="brand-last">FABLET</span>
+      </a>
+
+      <div class="header-actions">
+        <button class="contact-btn" id="contactOpenBtn">Contact</button>
+      </div>
+    </header>
+
+    <button class="floating-sound" id="globalSoundBtn" aria-label="Activer ou couper le son">
+      <span class="sound-icon" id="soundIcon">🔇</span>
+      <span class="sound-label" id="soundLabel">Sound off</span>
+    </button>
+
+    <main>
+      <section class="hero">
+        <div class="hero-video-shell">
+          <div class="hero-video-wrap">
+            <video
+              id="introVideo1"
+              class="hero-video active"
+              src="videos/intro-01.mp4"
+              playsinline
+              preload="auto"
+              muted
+            ></video>
+            <video
+              id="introVideo2"
+              class="hero-video"
+              src="videos/intro-02.mp4"
+              playsinline
+              preload="auto"
+              muted
+            ></video>
+
+            <div class="hero-overlay"></div>
+            <div class="shutter shutter-top" id="shutterTop"></div>
+            <div class="shutter shutter-bottom" id="shutterBottom"></div>
+          </div>
+        </div>
+
+        <div class="hero-copy mobile-copy">
+          <h1 class="headline">
+            <span>LET'S</span>
+            <span>CREATE</span>
+            <span>IMPACT</span>
+          </h1>
+
+          <div class="brand-lines">
+            <p class="brand-line-main">Image • Rhythm • Sound</p>
+            <p class="brand-line-sub">
+              <span>One</span>
+              <span>Cinematic</span>
+              <span>Language</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-copy desktop-copy">
+          <h1 class="headline desktop-headline">
+            <span>LET'S</span>
+            <span>CREATE</span>
+            <span>IMPACT</span>
+          </h1>
+
+          <div class="brand-lines desktop-brand-lines">
+            <p class="brand-line-main desktop-main">Image • Rhythm • Sound</p>
+            <p class="brand-line-sub desktop-sub">
+              <span>One</span>
+              <span>Cinematic</span>
+              <span>Language</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <article class="project-card reveal" data-project="project-01">
+          <div class="project-media">
+            <img src="images/project-01.jpg" alt="Project one" class="project-image" />
+            <video
+              class="project-video"
+              src="videos/project-01.mp4"
+              playsinline
+              preload="metadata"
+              muted
+              loop
+            ></video>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="project-02">
+          <div class="project-media">
+            <img src="images/project-02.jpg" alt="Project two" class="project-image" />
+            <video
+              class="project-video"
+              src="videos/project-02.mp4"
+              playsinline
+              preload="metadata"
+              muted
+              loop
+            ></video>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-project="project-03">
+          <div class="project-media">
+            <img src="images/project-03.jpg" alt="Project three" class="project-image" />
+            <video
+              class="project-video"
+              src="videos/project-03.mp4"
+              playsinline
+              preload="metadata"
+              muted
+              loop
+            ></video>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="modal" id="contactModal" aria-hidden="true">
+      <div class="modal-panel">
+        <div class="modal-head">
+          <div>
+            <p class="modal-kicker">Contact</p>
+            <h2>Let’s make it happen</h2>
+          </div>
+          <button class="modal-close" id="contactCloseBtn" aria-label="Fermer">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <p>Bring the idea, the timing, the ambition — I’ll take it from there.</p>
+          <div class="modal-links">
+            <p>raphael.fablet@gmail.com</p>
+            <p>LinkedIn / Instagram / Vimeo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
